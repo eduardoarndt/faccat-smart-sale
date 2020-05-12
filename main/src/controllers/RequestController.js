@@ -1,6 +1,9 @@
 module.exports = {
     async index(request, response) {
-        console.log("Received request", request.body)
+        let requestBody = request.body
+        
+        console.log("Received request: ", requestBody)
+        console.log(requestBody.msg)
 
         return response.json(JSON.stringify({
             msg: "Hello World!"
