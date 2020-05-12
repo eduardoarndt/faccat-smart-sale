@@ -5,8 +5,8 @@ module.exports = {
         console.log("Received request: ", requestBody)
         console.log(requestBody.msg)
 
-        return response.json(JSON.stringify({
+        return response.json({
             msg: "Hello World!"
-        }));
+        });
     }
 }
