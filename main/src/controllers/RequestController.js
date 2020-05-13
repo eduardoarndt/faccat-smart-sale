@@ -1,9 +1,12 @@
-module.exports = {
-    async index(request, response) {
-        let requestBody = request.body
+const productFactory = require('./../models/product.js')
 
-        console.log("Received request: ", requestBody)
-        console.log(requestBody.msg)
+module.exports = {
+    async readProductList(request, response) {
+        console.log("Received request: ", request.body);
+        
+        let product = productFactory.createProduct(request.body);
+
+        console.log("Parsed product: ", product);
 
         return response.json({
             msg: "Hello World!"
