@@ -9,6 +9,7 @@ This application supports livereload using nodemon!
 1. Install dependencies
     
     `npm install`
+    
     `npm install nodemon -g`
 2. Start the application 
     
