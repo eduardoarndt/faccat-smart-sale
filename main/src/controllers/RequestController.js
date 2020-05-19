@@ -4,12 +4,16 @@ module.exports = {
     readProductList(request, response) {
         console.log("Received request: ", request.body);
         
-        let product = productFactory.createProduct(request.body);
+        let productList = [];
 
-        console.log("Parsed product: ", product);
-
-        return response.json({
-            msg: "Hello World!"
+        request.body.forEach(element => {
+            productList.push(
+                productFactory.createProduct(element)
+            )
         });
+
+        console.log("Parsed product list: ", productList);
+
+        return response.json(productList);
     }
 }
