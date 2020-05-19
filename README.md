@@ -20,6 +20,7 @@ This application supports livereload using nodemon!
 # Sprint Notes
 
 ## Daily - 19/08
+- Joel, Juan e Michel não puderam participar
 - Eduardo criou projeto no github e template de servidor básico em nodejs
 - Eduardo criou modelo de produto
 - João fez parte de receber produtos na request http do nosso serviço
