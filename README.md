@@ -16,3 +16,12 @@ This application supports livereload using nodemon!
     `npm start`
 
 3. Use postman or insomnia to do a POST request to localhost:3030/request
+
+# Sprint Notes
+
+## Daily - 19/08
+- Eduardo criou projeto no github e template de servidor básico em nodejs
+- Eduardo criou modelo de produto
+- João fez parte de receber produtos na request http do nosso serviço
+- João não conseguiu terminar parte de receber produtos como LISTA, Eduardo irá ajudar
+- Lucas Schuler vai começar a estudar api do google trends
