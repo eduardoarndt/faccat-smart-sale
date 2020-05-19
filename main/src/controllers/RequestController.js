@@ -1,7 +1,7 @@
 const productFactory = require('./../models/product.js')
 
 module.exports = {
-    async readProductList(request, response) {
+    readProductList(request, response) {
         console.log("Received request: ", request.body);
         
         let product = productFactory.createProduct(request.body);
