@@ -2,7 +2,8 @@
 
 *Projeto para a disciplina de Gerência de Projetos com intuito de estudar metodologias de desenvolvimento de software.*
 
-# Getting Started
+---
+## Getting Started
 
 This application supports livereload using nodemon!
 
@@ -17,12 +18,19 @@ This application supports livereload using nodemon!
 
 3. Use postman or insomnia to do a POST request to localhost:3030/request
 
-# Sprint Notes
+---
+## Sprint Notes
 
-## Daily - 19/08
+### Daily - 19/08
 - Joel, Juan e Michel não puderam participar
 - Eduardo criou projeto no github e template de servidor básico em nodejs
 - Eduardo criou modelo de produto
 - João fez parte de receber produtos na request http do nosso serviço
 - João não conseguiu terminar parte de receber produtos como LISTA, Eduardo irá ajudar
 - Lucas Schuler vai começar a estudar api do google trends
+
+### Daily - 26/09
+- Dia de review e retrospectiva!
+- Repassamos pelas tarefas que não foram concluídas e pq não foram concluídas
+- Apresentamos as funcionalidades entregues aos stakeholders na review
+- Fizemos o quadro da retrospectiva
