@@ -9,18 +9,24 @@ async function sortProductByTrend(products) {
 }
 
 function trendApiCall(products) {
+    console.log("calling trends api");
+
     let productNames = [];
 
     products.forEach(element => {
         productNames.push(element.name);
     });
 
-    return googleTrends.interestOverTime({ keyword: productNames })
+    return googleTrends.interestOverTime({ 
+            keyword: productNames,
+            startTime: new Date(Date.now() - (7 * 24 * 60 * 60 * 1000)),
+            geo: 'BR'
+        })
         .then((res) => {
             return JSON.parse(res).default.averages;
         })
         .catch((err) => {
-            console.log('got the error', err);
+            console.log('Error!', err);
         })
 }
 
