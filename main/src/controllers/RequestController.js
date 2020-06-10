@@ -1,17 +1,23 @@
+const { ExploreTrendRequest } = require('g-trends');
 const productFactory = require('./../models/product.js');
+const trendController = require('./../controllers/TrendsController');
 
-module.exports = {
-    readProductList(request, response) {
-        console.log("Received request: ", request.body);
-        
-        let productList = [];
+const trendRequest = new ExploreTrendRequest();
 
-        request.body.forEach(element => {
-            productList.push(productFactory.createProduct(element))
-        });
+async function readProductList(request, response) {
+    console.log("Received request: ", request.body);
 
-        console.log("Parsed product list: ", productList);
+    let productList = [];
+    
+    request.body.forEach(element => {
+        productList.push(productFactory.createProduct(element))
+    });
 
-        return response.json(productList);
-    }
+    console.log("Parsed product list: ", productList);
+
+    let productResults = await trendController.sortProductByTrend(productList);
+
+    return response.json(productResults);
 }
+
+module.exports.readProductList = readProductList;
