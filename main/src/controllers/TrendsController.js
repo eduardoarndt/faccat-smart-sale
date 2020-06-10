@@ -1,52 +1,45 @@
-const { ExploreTrendRequest, SearchProviders } = require('g-trends');
-const csvParser = require("csv-parse");
-const trendRequest = new ExploreTrendRequest();
+const googleTrends = require('google-trends-api');
 
 async function sortProductByTrend(products) {
-    products.forEach(element => {
-        trendRequest.addKeyword(element.name);
-    });
-
-    let trendsApiResult = await trendApiCall();
+    let trendsApiResult = await trendApiCall(products);
     let normalizedProductsWithTrend = await mapTrendsResults(products, trendsApiResult);
     let result = await sortProductsByTrend(normalizedProductsWithTrend);
 
     return result;
 }
 
-function trendApiCall() {
-    return trendRequest.past30Days().download().then(csv => {
-        console.log('Resuls retrieved from google trends!');
-        return csv;
-    }).catch(error => {
-        console.log(error);
-        throw new Error("Failed fetching datas from google trends", error);
+function trendApiCall(products) {
+    let productNames = [];
+
+    products.forEach(element => {
+        productNames.push(element.name);
     });
+
+    return googleTrends.interestOverTime({ keyword: productNames })
+        .then((res) => {
+            return JSON.parse(res).default.averages;
+        })
+        .catch((err) => {
+            console.log('got the error', err);
+        })
 }
 
 function mapTrendsResults(products, trendsApiResult) {
     console.log("mapping results to products");
-    
-    for (let i = 0; i < products.length; i++) {
-        const product = products[i];
 
-        for (let j = 1; j < trendsApiResult.length; j++) {
-            const element = Number(trendsApiResult[j][i + 1]);
-
-            if (product.trend) {
-                product.trend += element;
-            } else {
-                product.trend = element;
-            }
-        }
+    for (let index = 0; index < products.length; index++) {
+        const product = products[index];
+        product.trend = trendsApiResult[index];
     }
+
+    console.log(products);
 
     return products;
 }
 
 function sortProductsByTrend(products) {
     console.log("sorting by trend score");
-    
+
     products.sort((b, a) => parseFloat(a.trend) - parseFloat(b.trend));
     return products;
 }

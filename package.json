@@ -21,7 +21,8 @@
     "cors": "^2.8.5",
     "csv": "^5.3.2",
     "express": "^4.17.1",
-    "g-trends": "0.0.8"
+    "g-trends": "0.0.8",
+    "google-trends-api": "^4.9.0"
   },
   "devDependencies": {
     "nodemon": "^2.0.3"
