@@ -5,7 +5,7 @@ const trendController = require('./../controllers/TrendsController');
 const trendRequest = new ExploreTrendRequest();
 
 async function readProductList(request, response) {
-    console.log("Received request: ", request.body);
+    //console.log("Received request: ", request.body);
 
     let productList = [];
     
@@ -13,7 +13,7 @@ async function readProductList(request, response) {
         productList.push(productFactory.createProduct(element))
     });
 
-    console.log("Parsed product list: ", productList);
+    //console.log("Parsed product list: ", productList);
 
     let productResults = await trendController.sortProductByTrend(productList);
 
