@@ -3,7 +3,8 @@ const cors = require('cors');
 const routes = require('./routes');
 
 const app = express();
-const port = process.env.PORT || "3030";
+const port = process.env.VCAP_APP_PORT || process.env.PORT || '3000';
+console.log("port: ", port);
 
 app.use(cors());
 
