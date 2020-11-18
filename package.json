@@ -1,0 +1,30 @@
+{
+  "name": "faccat-smart-sale",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node main/src/index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/eduardoarndt/faccat-smart-sale.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/eduardoarndt/faccat-smart-sale/issues"
+  },
+  "homepage": "https://github.com/eduardoarndt/faccat-smart-sale#readme",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "csv": "^5.3.2",
+    "express": "^4.17.1",
+    "g-trends": "0.0.8",
+    "google-trends-api": "^4.9.0"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.3"
+  }
+}
