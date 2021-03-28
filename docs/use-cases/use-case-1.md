@@ -37,6 +37,14 @@ Nenhuma.
 | 2   | O cliente confirma o cancelamento.                                        | O sistema fecha o cadastro de cliente.                       |
 | Fim |
 
+|     | Ação do ator                                         | Resposta do sistema                                                                    |
+| --- | ---------------------------------------------------- | -------------------------------------------------------------------------------------- |
+| 1   | O cliente acessa a opção de cadastro de clientes.    | O sistema solicita os dados de e-mail do cliente e senha.                              |
+| 2   | O cliente informa os dados solicitados corretamente. | O sistema valida as entradas de acordo com cada campo e pede a confirmação do cliente. |
+| 3   | O cliente **não** confirma os dados informados.      | O sistema informa que o cadastro será cancelado.                                       |
+| 3.1 |                                                      | O sistema fecha o cadastro de cliente.                                                 |
+| Fim |  
+
 ### B. ?
 
 ### Fluxos de Exceção
