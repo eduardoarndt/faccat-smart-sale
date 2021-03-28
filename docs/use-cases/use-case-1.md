@@ -31,12 +31,6 @@ Nenhuma.
 
 ### A. Usuário cancela o cadastro
 
-|     | Ação do ator                                                              | Resposta do sistema                                          |
-| --- | ------------------------------------------------------------------------- | ------------------------------------------------------------ |
-| 1   | No passo 3 do fluxo básico A, o cliente não confirma os dados informados. | O sistema informa que a operação de cadastro será cancelada. |
-| 2   | O cliente confirma o cancelamento.                                        | O sistema fecha o cadastro de cliente.                       |
-| Fim |
-
 |     | Ação do ator                                         | Resposta do sistema                                                                    |
 | --- | ---------------------------------------------------- | -------------------------------------------------------------------------------------- |
 | 1   | O cliente acessa a opção de cadastro de clientes.    | O sistema solicita os dados de e-mail do cliente e senha.                              |
