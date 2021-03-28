@@ -1,6 +1,6 @@
 # Smart Sale
 
-## Especificação de caso de uso: Manter cadastro de clientes
+## Especificação de Caso de Uso: Manter Cadastro de Clientes
 
 Este caso de uso tem por finalidade documentar os fluxos necessários para antendar a funcionalidade de cadastro de clientes do sistema Smart Sale.
 
@@ -12,7 +12,7 @@ Este caso de uso tem por finalidade documentar os fluxos necessários para anten
 
 Nenhuma.
 
-## Fluxo de Eventos
+## Fluxo de eventos
 
 ### Fluxo Básico
 
@@ -58,3 +58,11 @@ Nenhuma.
 | 2   | O cliente informa os dados solicitados com um e-mail já cadastrado. | O sistema valida as entradas de acordo com cada campo.                |
 | 2.1 |                                                                     | O sistema informa o cliente que o e-mail informado já está cadastrado |
 | Fim |
+
+## Pontos de Extensão
+
+## Pós-condições
+
+## Requisitos Especiais
+
+## Observações
