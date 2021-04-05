@@ -39,7 +39,21 @@ Nenhuma.
 | 3.1 |                                                      | O sistema fecha o cadastro de cliente.                                                 |
 | Fim |  
 
-### B. ?
+### B. Usuário deleta o cadastro
+#### Pré-condições
+
+O cliente precisa estar cadastrado e logado.
+
+|     | Ação do ator                                        | Resposta do sistema                                                      |
+|-----|-----------------------------------------------------|--------------------------------------------------------------------------|
+| 1   | O cliente acessa a opção de perfil do cliente.      | O sistema abre a página do perfil do cliente.                            |
+| 2   | O cliente acessa a opção de configurações da conta. | O sistema abre a página de configurações da conta do cliente.            |
+| 3   | O cliente acessa a opção de deletar conta.          | O sistema informa que o processo é irreversível.                         |
+| 3.1 |                                                     | O sistema pede a confirmação da ação.                                    |
+| 4   | O cliente confirma a deleção da conta.              | O sistema envia ao cliente um e-mail de confirmação da deleção da conta. |
+| 4.1 |                                                     | O sistema deleta as informações do cliente.                              |
+| 4.2 |                                                     | O sistema informa que a deleção foi realizada com sucesso.               |
+
 
 ### Fluxos de Exceção
 
