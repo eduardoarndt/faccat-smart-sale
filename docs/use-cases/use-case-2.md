@@ -61,7 +61,17 @@ O cliente necessita ter uma assinatura ativa.
 
 O cliente necessita ter uma assinatura ativa.
 
-
+|     | Ação do ator                                             | Resposta do sistema                                                                |
+|-----|----------------------------------------------------------|------------------------------------------------------------------------------------|
+| 1   | O cliente acessa o menu de assinaturas.                  | O sistema abre a página de assinaturas do sistema Smart Sale.                      |
+| 2   | O cliente seleciona a assinatura atual.                  | O sistema abre a página de detalhes da assinatura.                                 |
+| 3   | O cliente seleciona a opção configurações da assinatura. | O sistema abre a página de configurações da assinatura.                            |
+| 4   | O cliente seleciona a opção de cancelar assinatura.      | O sistema pede a confirmação da ação.                                              |
+| 4.1 | O cliente confirma o cancelamento da sua assinatura.     | O sistema envia ao cliente um e-mail de confirmação do cancelamento da assinatura. |
+| 4.2 |                                                          | O sistema altera as informações da assinatura para cancelada.                      |
+| 4.3 |                                                          | O sistema cancela as operações de cobrança.                                        |
+| 4.4 |                                                          | O sistema informa que o cancelamento foi realizado com sucesso.                    |
+| Fim |                                                          |                                                                                    |
 
 ### Fluxos de Exceção
 
