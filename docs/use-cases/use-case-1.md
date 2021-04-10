@@ -1,6 +1,6 @@
 # Smart Sale
 
-## Especificação de Caso de Uso: Manter Cadastro de Clientes
+## Especificação de Caso de Uso: Manter Clientes
 
 Este caso de uso tem por finalidade documentar os fluxos necessários para antendar a funcionalidade de cadastro de clientes do sistema Smart Sale.
 
