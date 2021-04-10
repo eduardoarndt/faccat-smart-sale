@@ -1,6 +1,6 @@
 # Smart Sale
 
-## Especificação de Caso de Uso: Realizar Assinatura do Smart Sale
+## Especificação de Caso de Uso: Manter Assinatura do Smart Sale
 
 Este caso de uso tem por finalidade documentar os fluxos necessários para antendar a funcionalidade de realizar assinaturas dos produtos Smart Sale.
 
